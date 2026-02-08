@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 .about-us {
   height: 80vh;
   overflow: hidden;
@@ -261,4 +264,5 @@
   background-color: #ffffff;
   z-index: 1;
 }
+
 
