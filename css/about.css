@@ -1,237 +1,542 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+{
 
-html,
-body {
-  width: 100%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+margin: 0;
+
+padding: 0;
+
+box-sizing: border-box;
+
+
 }
 
 @keyframes fade {
-  from { opacity: 0; }
-  to { opacity: 1; }
+
+from {
+
+opacity: 0;
+
+}
+
+to {
+
+opacity: 1;
+
+}
+
 }
 
 @keyframes grow {
-  from { height: 0; }
-  to { height: 100svh; }
+
+from {
+
+height: 0vh;
+
 }
 
-@keyframes translateRight {
-  from {
-    opacity: 0;
-    transform: translateX(-60px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+to {
+
+height: 100svh;
+
 }
 
-@keyframes translateLeft {
-  from {
-    opacity: 0;
-    transform: translateX(60px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+html {
 
-@keyframes animation-top {
-  from { height: 0; }
-  to { height: 100%; }
-}
+scroll-behavior: smooth;
 
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9999;
-  background: white;
+overflow-x: hidden;
+
 }
 
 .about-us {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
+
+overflow-x: hidden;
+
 }
 
 .about-us img {
-  width: 100%;
-  max-width: 100%;
-  height: 100svh;
-  object-fit: cover;
-  display: block;
-  animation: grow 1s ease-in-out;
+
+width: 100%;
+
+height: 100vh;
+
+object-fit: cover;
+
+animation: grow 1s ease-in-out;
+
 }
 
 .titel {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  text-align: center;
-  padding: 1rem;
+
+overflow: hidden;
+
+position: absolute;
+
+top: 30%;
+
+left: 30%;
+
+padding: 1rem;
+
 }
 
 .titel h1 {
-  font-size: clamp(1.7rem, 5vw, 3.3rem);
-  font-family: "Shadows Into Light", cursive;
-  animation: fade 1s ease-in-out;
+
+font-size: clamp(1.7rem, 5vw, 3.3rem);
+
+font-family: "Shadows Into Light", cursive;
+
+animation: fade 1s ease-in-out;
+
 }
 
 .titel p {
-  font-family: "Shadows Into Light", cursive;
-  font-size: clamp(0.8rem, 3vw, 1.6rem);
-  color: rgba(0, 0, 0, 0.685);
-  margin-bottom: 1rem;
-  animation: fade 2s ease-in-out;
+
+font-family: "Shadows Into Light", cursive;
+
+font-size: clamp(0.8rem, 3vw, 1.6rem);
+
+text-align: center;
+
+color: rgba(0, 0, 0, 0.685);
+
+margin-bottom: 1rem;
+
+animation: fade 2s ease-in-out;
+
 }
 
 .titel button {
-  background: linear-gradient(135deg, #ff9800, #ff5722, #ffb347, #ff7043);
-  background-size: 300% 300%;
-  animation: gradientMove 6s ease infinite, fade 3s ease-in-out;
-  padding: 0.7rem;
-  border-radius: 10px;
-  border: 2px solid white;
-  cursor: pointer;
-  color: white;
-  display: block;
-  margin: 0 auto;
+
+background: linear-gradient(135deg, #ff9800, #ff5722, #ffb347, #ff7043);
+
+background-size: 300% 300%;
+
+animation:
+
+gradientMove 6s ease infinite,
+
+fade 3s ease-in-out;
+
+padding: 0.7rem;
+
+border-radius: 10px;
+
+border: 2px solid white;
+
+cursor: pointer;
+
+color: white;
+
+display: block;
+
+margin: 0 auto;
+
 }
 
 .titel a {
-  text-decoration: none;
-  color: white;
-  font-family: "Shadows Into Light", cursive;
+
+text-decoration: none;
+
+color: white;
+
+font-family: "Shadows Into Light", cursive;
+
 }
 
 .our-story {
-  margin: 4rem 0;
+
+margin-top: 4rem;
+
+margin-bottom: 4rem;
+
 }
 
 .titel-story {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding: 0.5rem;
+
+display: flex;
+
+justify-content: space-evenly;
+
+align-items: center;
+
+gap: 20px;
+
+flex-wrap: wrap;
+
+padding: 0.5rem;
+
 }
 
 .our-story h1,
+
 .our-journey h1,
+
 .core-values h1 {
-  text-align: center;
-  animation: fade both;
-  animation-timeline: view(10% 5%);
-  padding: 4rem;
-  font-size: clamp(2.2rem, 5vw, 3.3rem);
-  font-family: "Shadows Into Light", cursive;
+
+text-align: center;
+
+animation: fade both;
+
+animation-timeline: view(10% 5%);
+
+padding: 4rem;
+
+font-size: clamp(2.2rem, 5vw, 3.3rem);
+
+font-family: "Shadows Into Light", cursive;
+
+}
+
+@keyframes translateRight {
+
+from {
+
+opacity: 0;
+
+transform: translateX(-60px);
+
+}
+
+to {
+
+transform: translateX(0);
+
+opacity: 1;
+
+}
+
+}
+
+@keyframes translateLeft {
+
+from {
+
+opacity: 0;
+
+transform: translateX(100px);
+
+}
+
+to {
+
+transform: translateX(0);
+
+opacity: 1;
+
+}
+
 }
 
 .titel-story p {
-  max-width: 27rem;
-  letter-spacing: 2px;
-  font-family: "Shadows Into Light", cursive;
-  animation: translateRight both;
-  animation-timeline: view(50% 5%);
+
+width: 27rem;
+
+letter-spacing: 2px;
+
+font-family: "Shadows Into Light", cursive;
+
+animation: translateRight both;
+
+animation-timeline: view(50% 5%);
+
 }
 
 .titel-story span {
-  color: #ff9800;
+
+color: #ff9800;
+
 }
 
 .titel-story img {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 7px 7px 7px #ff990060;
-  animation: translateLeft both;
-  animation-timeline: view(10% 5%);
+
+box-shadow: 7px 7px 7px #ff990060;
+
+border-radius: 10px;
+
+overflow: hidden;
+
+animation: translateLeft both;
+
+animation-timeline: view(10% 5%);
+
 }
 
 .core-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
-  justify-content: center;
+
+display: grid;
+
+grid-template-columns: repeat(3, 300px);
+
+place-items: center;
+
+justify-content: center;
+
+gap: 1rem;
+
+}
+
+#core-center1 {
+
+animation: fade both;
+
+animation-timeline: view(10% 5%);
+
+}
+
+#core-center2 {
+
+animation: fade both;
+
+animation-timeline: view(10% 5%);
+
+}
+
+#core-center3 {
+
+animation: fade both;
+
+animation-timeline: view(10% 5%);
+
+}
+
+#core-center4 {
+
+animation: fade both;
+
+animation-timeline: view(10% 5%);
+
+}
+
+#core-center5 {
+
+animation: fade both;
+
+animation-timeline: view(10% 5%);
+
+}
+
+#core-center6 {
+
+animation: fade both;
+
+animation-timeline: view(10% 5%);
+
+}
+
+@media (max-width: 1024px) {
+
+.core-container {
+
+grid-template-columns: repeat(2, 290px);
+
+}
+
+}
+
+@media (max-width: 768px) {
+
+.core-container {
+
+grid-template-columns: 280px;
+
+}
+
+#core-center1 {
+
+animation: translateLeft both;
+
+animation-timeline: view(10% 5%);
+
+}
+
+#core-center2 {
+
+animation: translateRight both;
+
+animation-timeline: view(10% 10%);
+
+}
+
+#core-center3 {
+
+animation: translateLeft both;
+
+animation-timeline: view(20% 10%);
+
+}
+
+#core-center4 {
+
+animation: translateRight both;
+
+animation-timeline: view(30% 10%);
+
+}
+
+#core-center5 {
+
+animation: translateLeft both;
+
+animation-timeline: view(40% 10%);
+
+}
+
+#core-center6 {
+
+animation: translateRight both;
+
+animation-timeline: view(50% 10%);
+
+}
+
 }
 
 .core-center {
-  border-radius: 1rem;
-  border: 1px solid white;
-  padding: 1rem;
-  text-align: center;
-  background: linear-gradient(135deg, #ff9800, #ff5722, #ffb347, #ff7043);
-  background-size: 300% 300%;
-  animation: gradientMove 6s ease infinite;
-  font-family: "Shadows Into Light", cursive;
-  transition: 0.3s;
+
+border-radius: 1rem;
+
+border: 1px solid white;
+
+padding: 1rem;
+
+text-align: center;
+
+background: linear-gradient(135deg, #ff9800, #ff5722, #ffb347, #ff7043);
+
+background-size: 300% 300%;
+
+animation: gradientMove 6s ease infinite;
+
+font-family: "Shadows Into Light", cursive;
+
+transition: all 0.3s linear;
+
 }
 
 .core-center:hover {
-  background: linear-gradient(135deg, #ffb300, #ff8f00, #ffb300, #ff8f00);
-  background-size: 300% 300%;
-  animation: gradientMove 2s ease infinite;
+
+background: linear-gradient(135deg, #ffb300, #ff8f00, #ffb300, #ff8f00);
+
+background-size: 300% 300%;
+
+animation: gradientMove 2s ease infinite;
+
 }
 
 .core-center svg {
-  fill: rgb(238, 255, 3);
+
+fill: rgb(238, 255, 3);
+
 }
 
 .container-our-journey {
-  margin-top: 4rem;
-  position: relative;
-  display: grid;
-  place-items: center;
-  font-family: "Shadows Into Light", cursive;
+
+margin-top: 4rem;
+
+position: relative;
+
+display: grid;
+
+font-family: "Shadows Into Light", cursive;
+
+place-self: center;
+
 }
 
 .center-journey {
-  padding: 1.5rem;
-  position: relative;
+
+padding: 1.5rem;
+
+position: relative;
+
 }
 
 .our-journey {
-  padding: 1rem;
-  margin-bottom: 4rem;
+
+padding: 1rem;
+
+margin-bottom: 4rem;
+
 }
 
 .container-our-journey::after {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 100%;
-  border-radius: 10px;
-  background-color: #ffb300;
-  animation: animation-top both;
-  animation-timeline: view(20% 10%);
+
+content: "";
+
+position: absolute;
+
+width: 4px;
+
+border-radius: 10px;
+
+background-color: #ffb300;
+
+animation: animation-top both;
+
+animation-timeline: view(20% 10%);
+
+}
+
+@keyframes animation-top {
+
+from {
+
+height: 0;
+
+}
+
+to {
+
+height: 100%;
+
+}
+
+}
+
+@keyframes gradientMove {
+
+0% {
+
+background-position: 0% 50%;
+
+}
+
+50% {
+
+background-position: 100% 50%;
+
+}
+
+100% {
+
+background-position: 0% 50%;
+
+}
+
 }
 
 .center-journey::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  left: -10px;
-  top: 20%;
-  border-radius: 50%;
-  background-color: #ffffff;
-  z-index: 1;
+
+content: "";
+
+position: absolute;
+
+width: 25px;
+
+left: -10px;
+
+top: 20%;
+
+height: 25px;
+
+border-radius: 50%;
+
+background-color: #ffffff;
+
+z-index: 1;
+
 }
+
+عندي مشكل overflow-x  و nav ar ليس fixed
