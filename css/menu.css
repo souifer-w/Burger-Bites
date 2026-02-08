@@ -190,14 +190,16 @@
 @media (max-width: 768px) {
   .menu-section {
     display: flex;
+    flex-wrap: nowrap;
+
     justify-content: start;
     overflow-x: auto;
-    flex-wrap: nowrap;
-    touch-action: pan-x;
-    overflow: hidden;
-    scroll-behavior: smooth;
+    overflow-y: hidden;
+
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+
+    scroll-behavior: smooth;
 
     animation: images-Reveal both;
     animation-timeline: view(100% 10%);
@@ -373,3 +375,4 @@ details button {
     width: 270px;
   }
 }
+
