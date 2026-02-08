@@ -3,7 +3,7 @@
   overflow: clip;
   background-image: url("../images/close-up-hand-holding-tasty-burger\ \(2\).png");
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   animation:
