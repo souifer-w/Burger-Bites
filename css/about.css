@@ -1,9 +1,6 @@
-body {
-  overflow-x: hidden;
-}
 .about-us {
-  height: 80vh;
-  overflow: hidden;
+  min-height: 100svh;
+  overflow: clip;
   background-image: url("../images/close-up-hand-holding-tasty-burger\ \(2\).png");
   background-size: cover;
   background-attachment: scroll;
@@ -14,25 +11,29 @@ body {
     grow 1s linear;
   padding: 100px 0;
 }
-
+body {
+  overflow-x: hidden;
+}
 @keyframes grow {
   from {
     height: 0vh;
   }
   to {
-    opacity: 80vh;
+    height: 100svh;
   }
 }
 @media (max-width: 768px) {
   .about-us {
+    overflow: hidden;
     background-image: url("../images/close-up-hand-holding-tasty-burger\ \(2\).png");
     background-position: 50% 20%;
   }
 }
 .titel {
+  overflow: hidden;
   position: absolute;
   top: 30%;
-  left: 45%;
+  left: 30%;
   padding: 1rem;
 }
 .titel h1 {
@@ -80,7 +81,6 @@ body {
   gap: 20px;
   flex-wrap: wrap;
   padding: 0.5rem;
-  overflow: hidden;
 }
 .our-story h1,
 .our-journey h1,
@@ -263,6 +263,3 @@ body {
   background-color: #ffffff;
   z-index: 1;
 }
-
-
-
