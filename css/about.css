@@ -14,6 +14,14 @@
 body {
   overflow-x: hidden;
 }
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes grow {
   from {
     height: 0vh;
@@ -54,7 +62,9 @@ body {
 .titel button {
   background: linear-gradient(135deg, #ff9800, #ff5722, #ffb347, #ff7043);
   background-size: 300% 300%;
-  animation: gradientMove 6s ease infinite;
+  animation:
+    gradientMove 6s ease infinite,
+    fade 3s ease-in-out;
   padding: 0.7rem;
   border-radius: 10px;
   border: 2px solid white;
@@ -62,8 +72,6 @@ body {
   color: white;
   display: block;
   margin: 0 auto;
-
-  animation: fade 3s ease-in-out;
 }
 .titel a {
   text-decoration: none;
@@ -133,7 +141,8 @@ body {
 .core-container {
   display: grid;
   grid-template-columns: repeat(3, 300px);
-  place-content: center;
+  place-items: center;
+  justify-content: center;
 
   gap: 1rem;
 }
@@ -250,6 +259,17 @@ body {
   }
   to {
     height: 100%;
+  }
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 .center-journey::after {
