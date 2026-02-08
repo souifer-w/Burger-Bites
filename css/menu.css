@@ -201,8 +201,7 @@
 
     scroll-behavior: smooth;
 
-    animation: images-Reveal both;
-    animation-timeline: view(100% 10%);
+
   }
   .center-menu {
     width: 190px !important;
@@ -375,5 +374,6 @@ details button {
     width: 270px;
   }
 }
+
 
 
