@@ -11,7 +11,8 @@
     grow 1s linear;
   padding: 100px 0;
 }
-body {
+html {
+  width: 100%;
   overflow-x: hidden;
 }
 @keyframes fade {
@@ -283,3 +284,4 @@ body {
   background-color: #ffffff;
   z-index: 1;
 }
+
