@@ -47,7 +47,9 @@ body {
   z-index: 2;
   position: fixed;
   
-inset:0;
+top:0;
+left:0;
+right:0;
   animation: nav-animation1 1s ease-in-out;
 }
 .nav {
