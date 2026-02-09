@@ -49,6 +49,7 @@ body {
 
 .about-us {
 
+  position: relative;
 overflow-x: hidden;
 
 }
@@ -65,7 +66,7 @@ overflow-x: hidden;
 .titel {
 position: absolute;
   left: 30%;
-top30%
+top:30%;
   text-align: center;
   
 }
