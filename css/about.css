@@ -65,9 +65,9 @@ overflow-x: hidden;
 .titel {
 position: absolute;
   left: 30%;
-  transform: translateX(-50%);
+top30%
   text-align: center;
-  width: 90%;
+  
 }
 .titel h1 {
 
