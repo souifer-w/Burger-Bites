@@ -102,33 +102,13 @@ html {
   font-size: clamp(2.2rem, 5vw, 3.3rem);
   font-family: "Shadows Into Light", cursive;
 }
-@keyframes translateRight {
-  from {
-    opacity: 0;
-    transform: translateX(-60px);
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes translateLeft {
-  from {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
+
 .titel-story p {
   width: 27rem;
   letter-spacing: 2px;
   font-family: "Shadows Into Light", cursive;
 
-  animation: translateRight both;
-  animation-timeline: view(50% 5%);
+  
 }
 .titel-story span {
   color: #ff9800;
@@ -137,8 +117,7 @@ html {
   box-shadow: 7px 7px 7px #ff990060;
   border-radius: 10px;
   overflow: hidden;
-  animation: translateLeft both;
-  animation-timeline: view(10% 5%);
+  
 }
 .core-container {
   display: grid;
